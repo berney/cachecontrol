@@ -16,3 +16,8 @@ try:
     from .redis_cache import RedisCache
 except ImportError:
     pass
+
+try:
+    from .sqlalchemy_cache import SQLAlchemyCache, SQLAlchemyCacheMixin
+except ImportError:
+    pass
