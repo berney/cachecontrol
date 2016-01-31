@@ -18,6 +18,7 @@ except ImportError:
     pass
 
 try:
-    from .sqlalchemy_cache import SQLAlchemyCache, SQLAlchemyCacheMixin
+    from .sqlalchemy_cache import (SQLAlchemyCache, SQLAlchemyCacheMixin,
+                                   url_to_model)
 except ImportError:
     pass
