@@ -22,6 +22,7 @@ setup_params = dict(
     ],
     extras_require={
         'filecache': ['lockfile>=0.9'],
+        'sqlcache': ['sqlalchemy'],
     },
     entry_points={
         'console_scripts': [
