@@ -1,4 +1,5 @@
 from ..cache import BaseCache
+from ..controller import CacheController
 
 from sqlalchemy import Column, String, LargeBinary
 
