@@ -41,14 +41,12 @@ class SQLAlchemyCache(BaseCache):
             obj.cache_value = cache_value
 
         self.session.add(obj)
-        self.session.commit()
 
     def delete(self, cache_key):
         obj = self._get_obj(cache_key)
 
         if obj is not None:
             self.session.delete(obj)
-            self.session.commit()
 
     def close(self):
         self.session.close()
